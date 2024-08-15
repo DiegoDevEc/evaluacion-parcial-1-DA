@@ -42,7 +42,7 @@ class Participantes
             $con->close();
         }
     }
-    public function actualizar($nombre, $apellido, $email, $telefono) //update participantes set nombre = $nombre, apellido = $apellido, email = $email, telefono = $telefono where id = $id
+    public function actualizar($idParticipantes,$nombre, $apellido, $email, $telefono) //update participantes set nombre = $nombre, apellido = $apellido, email = $email, telefono = $telefono where id = $id
     {
         try {
             $con = new ClaseConectar();

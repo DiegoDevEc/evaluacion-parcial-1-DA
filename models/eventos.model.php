@@ -42,7 +42,7 @@ class Eventos
             $con->close();
         }
     }
-    public function actualizar($nombre, $fecha, $ubicacion, $descripcion) //update eventos set nombre = $nombre, fecha = $fecha, ubicacion = $ubicacion, descripcion = $descripcion where id = $id
+    public function actualizar($idEventos, $nombre, $fecha, $ubicacion, $descripcion) //update eventos set nombre = $nombre, fecha = $fecha, ubicacion = $ubicacion, descripcion = $descripcion where id = $id
     {
         try {
             $con = new ClaseConectar();
